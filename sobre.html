@@ -23,10 +23,10 @@ var _CriarClasse = function ()
     }
   } 
   
-  return function (Constructor, protoProps, staticProps) 
+  return function (Constructor,propriedadesPrototipas, propriedadesEstaticas) 
   {
-    if (protoProps) definirPropriedades(Constructor.prototype, protoProps); 
-    if (staticProps) definirPropriedades(Constructor, staticProps); return Constructor; 
+    if (propriedadesPrototipas) definirPropriedades(Constructor.prototype, propriedadesPrototipas); 
+    if (propriedadesEstaticas) definirPropriedades(Constructor, propriedadesEstaticas); return Constructor; 
   }; 
 }();
 
